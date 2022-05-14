@@ -1,4 +1,3 @@
-
 import React, {Component} from 'react'
 
 export default class CrearDes extends Component{
@@ -7,6 +6,41 @@ export default class CrearDes extends Component{
     constructor(props)
     {
         super(props);
+
+        this.onChangeName = this.onChangeName.bind(this);
+        this.onChangeDocument = this.onChangeDocument.bind(this);
+        this.onSubmit = this.onSubmit.bind(this);
+
+        
+        this.state=
+        {
+           dev_document:'',
+           dev_name:''
+        }
+    }
+
+    onChangeDocument(e)
+    {
+        this.setState(
+            {dev_document: e.target.value}
+        )
+    }
+
+    onChangeName(e)
+    {
+        this.setState(
+            {dev_name: e.target.value}
+        )
+    }
+
+    onSubmit(e)
+    {
+        e.preventDefault();
+
+        console.log('Se envio el formulario');
+        console.log('Nombre del desarrollador: ${this.state.dev_name}');
+        console.log('Documento del desarrollador: ${this.state.dev_document}');
+
     }
 
     render()
@@ -18,14 +52,14 @@ export default class CrearDes extends Component{
                         <label>Documento Desarrollador:</label>
                         <input type="text"
                                className="form-control"
-                               
+                               onChange={this.onChangeDocument}
                         />                        
                     </div>
                     <div className='form-group'>
                         <label>Nombre Desarrollador:</label>
                         <input type="text"
                                className="form-control"
-                               
+                               onChange={this.onChangeName}
                         />                        
                     </div>
                     <br/>
