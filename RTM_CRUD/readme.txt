@@ -1,4 +1,4 @@
-Esta mini-proyecto de fron-end con react funciona correctamente si los fuentes se ubican en la carpeta de un proyecto react creado con:
+Se recomienda ubicar los archivos dentro de /src/ de un proyecto creado con:
 
 npx create-react-app
 
