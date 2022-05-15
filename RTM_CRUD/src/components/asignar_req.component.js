@@ -4,7 +4,7 @@ export default class AsignarReq extends Component {
     render() {
         return (
             <div>
-                <p>Crear Requerimiento</p>
+                <p>Asignar Requerimiento a Ingeniero de Desarrollo</p>
             </div>
         );
     }
