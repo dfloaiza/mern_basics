@@ -1,6 +1,3 @@
-
-
-
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Link, Routes } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -15,7 +12,7 @@ class App extends Component{
         <div className="container">          
 
           <nav className = "navbar navbar-expand-lg navbar-light bg-light">
-            <Link to="/" className="navbar-brand">Lista de Tareas USC</Link>
+            <Link to="/" className="navbar-brand">RTM (Requirements Traceability Matrix) USC 2022A</Link>
             <div className="collapse navbar-collapse">
               <ul className="navbar-nav mr-auto">
                 <li className="navbar-item">
