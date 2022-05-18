@@ -62,7 +62,7 @@ export default class CrearDes extends Component{
                                onChange={this.onChangeName}
                         />                        
                     </div>
-                    <br/>
+                    <br/>                                   
                     <div className="form-group">
                         <input type="Submit" value="Guardar" className="btn btn-primary" />
                     </div>
